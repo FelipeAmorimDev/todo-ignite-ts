@@ -1,0 +1,46 @@
+.taskForm {
+  max-width: 736px;
+  margin: 0 auto;
+  position: relative;
+  top: -26px;
+  margin-bottom: -26px;
+  display: flex;
+  gap: 8px;
+}
+
+.taskForm input {
+  width: calc(100% - 91.91px);
+  padding: 1rem 0 1rem 1rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: 1px solid var(--Gray-700);
+  font-size: 1rem;
+}
+.taskForm input::placeholder {
+  color: var(--gray-300);
+}
+
+.taskForm button[type="submit"] {
+  background: var(--blue-dark);
+  border-radius: 8px;
+  padding: 1rem 1.125rem 1rem 1rem;
+  color: var(--gray-100);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.taskForm button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.taskForm button[type="submit"]:not(:disabled):hover {
+  background: var(--blue);
+}
